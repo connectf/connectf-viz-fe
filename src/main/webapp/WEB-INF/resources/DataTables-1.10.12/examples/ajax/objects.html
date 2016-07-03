@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
+	<title>DataTables example - Ajax data source (objects)</title>
+	<link rel="stylesheet" type="text/css" href="../../media/css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="../resources/syntax/shCore.css">
+	<link rel="stylesheet" type="text/css" href="../resources/demo.css">
+	<style type="text/css" class="init">
+	
+	</style>
+	<script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-1.12.3.min.js">
+	</script>
+	<script type="text/javascript" language="javascript" src="../../media/js/jquery.dataTables.js">
+	</script>
+	<script type="text/javascript" language="javascript" src="../resources/syntax/shCore.js">
+	</script>
+	<script type="text/javascript" language="javascript" src="../resources/demo.js">
+	</script>
+	<script type="text/javascript" language="javascript" class="init">
+	
+$(document).ready(function() {
+	$('#example').DataTable( {
+		
+			"data": [
+				{
+					"name": "Tiger Nixon",
+					"position": "System Architect",
+					"salary": "$320,800",
+					"start_date": "2011\/04\/25",
+					"office": "Edinburgh",
+					"extn": "5421"
+				},
+				{
+					"name": "Garrett Winters",
+					"position": "Accountant",
+					"salary": "$170,750",
+					"start_date": "2011\/07\/25",
+					"office": "Tokyo",
+					"extn": "8422"
+				}
+				,
+				{
+					"name": "Garrett Winters",
+					"position": "Accountant",
+					"salary": "$170,750",
+					"start_date": "2011\/07\/25",
+					"office": "Tokyo",
+					"extn": "8422"
+				}]
+				,
+		"columns": [
+			{ "data": "name" ,"title": "ABC"},
+			{ "data": "position" ,"title": "ABC"},
+			{ "data": "office" ,"title": "ABC"},
+			{ "data": "extn" ,"title": "ABC"},
+			{ "data": "start_date" ,"title": "ABC"},
+			{ "data": "salary" ,"title": "ABC"}
+		]
+	} );
+} );
+
+	</script>
+</head>
+<body class="dt-example">
+	<div class="container">
+
+			<table id="example" class="display" cellspacing="0" width="100%">
+				
+			</table>
+
+	</div>
+	
+</body>
+</html>
